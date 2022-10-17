@@ -391,7 +391,7 @@ module.exports = server = createServer(async (req, res) => {
       console.log(`GET ${URI_PREFIX}/{id} - получить услуги по его ID`);
       console.log(`PATCH ${URI_PREFIX}/{id} - изменить услугу с ID, в теле запроса нужно передать объект`);
       console.log(`DELETE ${URI_PREFIX}/{id} - удалить услугу по ID`);
-      console.log(`DELETE ${URI_PREFIX}/comment/{id} - добавить комментарий`);
+      console.log(`POST ${URI_PREFIX}/comment/{id} - добавить комментарий`);
     }
   })
   .listen(PORT);
