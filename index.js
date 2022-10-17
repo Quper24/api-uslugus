@@ -261,11 +261,11 @@ function addComment(itemId, comment) {
   }
 
   if (!comment.comment) {
-    errors.push({ field: "name", message: "Нет комментария" });
+    errors.push({ field: "text", message: "Нет комментария" });
   }
 
   if (!comment.star) {
-    errors.push({ field: "star", message: "Нет оценки" });
+    errors.push({ field: "stars", message: "Нет оценки" });
   }
 
   if (errors.length) throw new ApiError(422, { errors });
