@@ -251,7 +251,6 @@ function deleteItems(itemId) {
 function addComment(itemId, comment) {
   const errors = [];
 
-
   if (!comment.name) {
     errors.push({ field: "name", message: "Нет имени" });
   }
@@ -260,11 +259,11 @@ function addComment(itemId, comment) {
     errors.push({ field: "phone", message: "Нет телефона" });
   }
 
-  if (!comment.comment) {
+  if (!comment.text) {
     errors.push({ field: "text", message: "Нет комментария" });
   }
 
-  if (!comment.star) {
+  if (!comment.stars) {
     errors.push({ field: "stars", message: "Нет оценки" });
   }
 
